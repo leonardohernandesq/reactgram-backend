@@ -4,9 +4,8 @@ const dbPassword = process.env.DB_PASS;
 
 const conn = async () => {
     try{
-        const dbConn = await mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@listadecompras.t20xe.mongodb.net/?retryWrites=true&w=majority&appName=listadecompras`)
+        const dbConn = await mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@reactgram.0g2kcye.mongodb.net/?retryWrites=true&w=majority&appName=reactgram`)
         
-
         console.log('Conectou ao banco');
 
         return dbConn
